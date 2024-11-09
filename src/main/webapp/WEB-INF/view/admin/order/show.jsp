@@ -109,57 +109,13 @@
                 <div id="layoutSidenav_content">
                     <main>
                         <div class="container-fluid px-4">
-                            <h1 class="mt-4">Manage Users</h1>
+                            <h1 class="mt-4">Manage Orders</h1>
                             <ol class="breadcrumb mb-4">
                                 <li class="breadcrumb-item"><a href="/admin">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Users</li>
+                                <li class="breadcrumb-item active">Orders</li>
                             </ol>
-                            <div class="mt-5">
-                                <div class="row">
-                                    <div class="col-12 mx-auto">
-                                        <div class="d-flex justify-content-between">
-                                            <h3>Table users</h3>
-                                            <a href="/admin/user/create" class="btn btn-primary">Create a user</a>
-                                        </div>
-
-                                        <hr />
-                                        <table class="table table-bordered table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Email</th>
-                                                    <th>Full Name</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <c:forEach var="user" items="${users1}">
-
-                                                    <tr>
-                                                        <th>${user.id}</th>
-                                                        <td>${user.email}</td>
-                                                        <td>${user.fullname}</td>
-                                                        <td>
-                                                            <a href="/admin/user/${user.id}"
-                                                                class="btn btn-success">View</a>
-                                                            <a href="/admin/user/update/${user.id}"
-                                                                class="btn btn-warning mx-2">Update</a>
-                                                            <a href="/admin/user/delete/${user.id}"
-                                                                class="btn btn-danger mx-2">Delete</a>
-
-                                                        </td>
-                                                    </tr>
-                                                </c:forEach>
-
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                            <div>table order</div>
                         </div>
-
-
                     </main>
                     <jsp:include page="../layout/footer.jsp" />
                 </div>
